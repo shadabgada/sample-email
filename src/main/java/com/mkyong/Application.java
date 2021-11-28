@@ -46,6 +46,8 @@ public class Application implements CommandLineRunner {
     void sendEmail() {
 
         SimpleMailMessage msg = new SimpleMailMessage();
+
+        //receiver email addresses
         msg.setTo("1@gmail.com", "2@yahoo.com");
 
         msg.setSubject("Testing from Spring Boot");
@@ -61,7 +63,9 @@ public class Application implements CommandLineRunner {
 
         // true = multipart message
         MimeMessageHelper helper = new MimeMessageHelper(msg, true);
-        helper.setTo("shadabgada234@gmail.com");
+
+        //receiver email addresses
+        helper.setTo("receiver_email@gmail.com");
 
         helper.setSubject("Testing from Spring Boot");
 
