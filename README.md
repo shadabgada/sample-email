@@ -1,3 +1,4 @@
 # Spring Boot - How to send email via SMTP
 
-Article link : https://www.mkyong.com/spring-boot/spring-boot-how-to-send-email-via-smtp/
+- update username and password of sender email  in application.properties file
+- allow less secure app for sender google account
